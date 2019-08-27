@@ -10,7 +10,7 @@ class Author
   
   def posts
     binding.pry
-    Post.all.select {|post| post.author == self}
+    Post.all.select {|post| post.author}
   end 
   
   def add_post(post)
