@@ -21,15 +21,11 @@ class Author
     post.author = self
   end 
   
-
-  
-  
   def self.post_count
     @@post_count
   end
   
-  def
-  self.post_count=(num)
+  def self.post_count=(num)
     @@post_count += num
   end  
   
