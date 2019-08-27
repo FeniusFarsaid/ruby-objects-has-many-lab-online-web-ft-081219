@@ -1,6 +1,6 @@
 require "pry"
 class Author 
-  attr_accessor :name, :posts 
+  attr_accessor :name
   
   @@post_count = 0
   
@@ -8,8 +8,11 @@ class Author
     @name = name
   end 
   
+  def posts
+    Post.all.select {|post| post.author}
+  end 
+  
   def add_post(post)
-    @posts << post
     post.author = self
   end
   
