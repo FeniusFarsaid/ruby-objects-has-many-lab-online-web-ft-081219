@@ -9,6 +9,7 @@ class Author
   end 
   
   def posts
+    binding.pry
     Post.all.select {|post| post.author == self}
   end 
   
@@ -25,10 +26,4 @@ class Author
   def self.post_count
     Post.all.size
   end
-  
-  # def self.post_count=(num)
-  #   @@post_count += num
-  # end  
-  
-  
 end 
