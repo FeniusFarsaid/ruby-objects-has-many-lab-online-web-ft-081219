@@ -21,12 +21,12 @@ class Author
   end 
   
   def self.post_count
-    @@post_count
+    Post.all.size
   end
   
-  def self.post_count=(num)
-    @@post_count += num
-  end  
+  # def self.post_count=(num)
+  #   @@post_count += num
+  # end  
   
   
 end 
