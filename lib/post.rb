@@ -8,7 +8,7 @@ class Post
   def author=(author)
     @author = author
     author.posts << self
-    Author.post_count = 1
+    #Author.post_count = 1
   end
   
    @@all = []
