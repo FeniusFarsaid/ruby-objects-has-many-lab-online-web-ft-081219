@@ -9,7 +9,6 @@ class Author
   end 
   
   def posts
-    binding.pry
     Post.all.select {|post| post.author == self}
   end 
   
