@@ -1,4 +1,4 @@
-require "spec_helper"
+exrequire "spec_helper"
 
 describe "Author" do
 
